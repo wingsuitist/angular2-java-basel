@@ -168,14 +168,12 @@ Note: Question - who tried out Angular 2. "Did you like it?"
 
 #### News Detail
 
-`ng generate service shared/news`
 <img src="assets/techbasel/09-detail.gif" style="width:85%">
 
 ----
 
 #### News Latest
 
-`ng generate service shared/news`
 <img src="assets/techbasel/10-latest.gif" style="width:85%">
 
 ---
