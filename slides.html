@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>reveal-md</title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="theme/java-basel.css" id="theme">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section ><section data-markdown><script type="text/template">
+## Angular 2 + TypeScript
+
+<img src="assets/angular.png" style="height:200px">
+<img src="assets/ts.png" style="height:200px">
+
+# Welcome
+
+<aside class="notes" data-markdown>Thank you Java Basel for organizing this. It's important to do tech events in Basel to strengthen it as a tech place.</aside></script></section><section data-markdown><script type="text/template">
+### Angular 2 - a new Framework
+
+http://angular.io
+
+<img src="assets/angular.io.png" style="width:70%">
+
+<aside class="notes" data-markdown>Question - who tried out Angular 2. "Did you like it?"</aside></script></section><section data-markdown><script type="text/template">
+### TypeScript - JavaScript that scales
+
+<img src="assets/typescriptlang.png" style="width:70%;">
+
+<div style="border:3px solid blue; padding:10px; width:60%; margin:auto; margint-top:-80px;">
+  <div style="border:3px solid green; padding:10px; width:60%; float:left;">
+    <div style="border:3px solid gray; padding:10px; width:30%; float:left;">
+      <img src="assets/js.jpg" style="width:40%;">
+    </div>
+    <img src="assets/es2015.png" style="width:25%;">
+  </div>
+  <img src="assets/ts.png" style="width:20%;">
+</div>
+
+</script></section><section data-markdown><script type="text/template">
+## Hi - I'm Jonas...
+
+<img src="assets/jonas.png" style="margin-bottom:-50px;height:200px">
+
+<img src="assets/twitter.svg" style="width:40px;margin-bottom:-2px;border:none;box-shadow:none;">@wingsuitist
+
+#### ... I love to learn, develop and teach
+
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Let's build something
+
+1. The Idea: *Push Basel Tech*
+2. The Plan: *We need a Member "App"*
+3. Let's Implement: *Build it with Angular2*
+</script></section><section data-markdown><script type="text/template">
+### Basel Tech
+
+<img src="assets/bt-site.png" style="width:75%">
+</script></section><section data-markdown><script type="text/template">
+## Take it apart
+
+<img src="assets/bt-fe-parts.png" style="width:75%">
+</script></section><section data-markdown><script type="text/template">
+## Component Tree
+
+<img src="assets/bt-tree.png" style="width:75%">
+</script></section><section data-markdown><script type="text/template">
+## Single Component
+
+<img src="assets/bt-component.png" style="width:75%">
+</script></section><section data-markdown><script type="text/template">
+## Services
+
+<img src="assets/bt-services.png" style="width:75%">
+</script></section><section data-markdown><script type="text/template">
+## Overview
+
+<img src="assets/bt-fe-parts.png" style="width:45%">
+<img src="assets/bt-services.png" style="width:45%">
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Let's start
+
+*Angular-cli => Commandline Helper*
+
+*Setup, Generate, Build, Serve, Test, Deploy*
+
+<img src="assets/angularcli.svg" style="height:200px;">
+<img src="assets/npm-wombats.svg" style="height:200px;">
+
+1. Install node: https://nodejs.org/en/download/
+3. Install angular-cli: `npm install -g angular-cli`
+4. Editor: `Atom, Visual Studio Code, Webstorm`
+</script></section><section data-markdown><script type="text/template">
+#### New Angular 2 App
+
+`ng new baseltech`
+
+<img src="assets/techbasel/01-ngnew.gif" style="width:80%">
+</script></section><section data-markdown><script type="text/template">
+#### Run and test
+
+`ng serve`
+
+<img src="assets/techbasel/02-ngserve.gif" style="width:85%">
+</script></section><section data-markdown><script type="text/template">
+#### Generate and use Components
+
+`ng generate component login ...`
+
+<img src="assets/techbasel/03-components.gif" style="width:85%">
+</script></section><section data-markdown><script type="text/template">
+#### News Detail "Sub"-Component
+
+<img src="assets/techbasel/04-subcomp.gif" style="width:85%">
+</script></section><section data-markdown><script type="text/template">
+#### Generate Services
+
+`ng generate service shared/login`
+
+<img src="assets/techbasel/05-service.gif" style="width:85%">
+</script></section><section data-markdown><script type="text/template">
+#### Login
+
+<img src="assets/techbasel/06-login.gif" style="width:85%">
+</script></section><section data-markdown><script type="text/template">
+#### Permissions
+
+<img src="assets/techbasel/07-perm.gif" style="width:85%">
+</script></section><section data-markdown><script type="text/template">
+#### List News
+
+`ng generate service shared/news`
+<img src="assets/techbasel/08-news.gif" style="width:85%">
+</script></section><section data-markdown><script type="text/template">
+#### News Detail
+
+`ng generate service shared/news`
+<img src="assets/techbasel/09-detail.gif" style="width:85%">
+</script></section><section data-markdown><script type="text/template">
+#### News Latest
+
+`ng generate service shared/news`
+<img src="assets/techbasel/10-latest.gif" style="width:85%">
+</script></section></section><section ><section data-markdown><script type="text/template">
+#### Nice and structured
+
+<img src="assets/bt-fe-parts.png" style="height:450px">
+<img src="assets/techbasel/final.gif" style="height:450px">
+</script></section><section data-markdown><script type="text/template">
+#### That's Angular 2
+
+<img src="assets/bt-services.png" style="height:400px">
+<img src="assets/techbasel/structure.png" style="height:400px">
+</script></section><section data-markdown><script type="text/template">
+#### As Single Page Application
+
+<img src="assets/bt-spa.png" style="width:85%">
+</script></section><section data-markdown><script type="text/template">
+#### As App - Ionic2
+
+<img src="assets/bt-ionic2.png" style="width:85%">
+
+*On desktop with Electron like Visual Studio Code*
+</script></section><section data-markdown><script type="text/template">
+#### As App
+
+<img src="assets/bt-native.png" style="width:85%">
+</script></section></section><section ><section data-markdown><script type="text/template">
+### Angular 2 Approach
+
+1. **How do we want to work.**
+2. How to enable this in a JS world.
+
+<img src="assets/angular2-difference.png" style="width:85%;margin-top:-10px;">
+</script></section><section data-markdown><script type="text/template">
+### Ecosystem & Tooling from Day 1
+
+<img src="assets/universal.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/webpack.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/angularcli.svg" style="height:60px; border: 1px solid gray;">
+<img src="assets/npm.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/ts.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/es2015.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/firebase.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/ngrx.png" style="height:60px; border: 1px solid gray;">
+
+<img src="assets/ionic.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/nativescript.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/electron.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/jaxio.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/apollo.svg" style="height:60px; border: 1px solid gray;">
+<img src="assets/meteor.png" style="height:60px; border: 1px solid gray;">
+
+
+<img src="assets/atom.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/webstorm.jpg" style="height:60px; border: 1px solid gray;">
+<img src="assets/vscode.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/codelyzer.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/augury.svg" style="height:60px; border: 1px solid gray;">
+<img src="assets/protractor.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/jasmin.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/karma.png" style="height:60px; border: 1px solid gray;">
+
+
+<img src="assets/ngprime.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/material.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/kendo.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/bootstrap.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/fuelui.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/nglightning.svg" style="height:60px; border: 1px solid gray;">
+<img src="assets/onson.png" style="height:60px; border: 1px solid gray;">
+<img src="assets/semantic.jpg" style="height:60px; border: 1px solid gray;">
+</script></section><section data-markdown><script type="text/template">
+### Most important => The force is with it
+
+1. Team: Experienced, Full Time, Proven
+2. Backing: Top Companies use it for Core Business
+
+<img src="assets/team1.png" style="height:400px">
+<img src="assets/team2.png" style="height:400px">
+<img src="assets/github.png" style="height:200px">
+</script></section><section data-markdown><script type="text/template">
+#### And....
+
+### It attracts new audiences
+
+* Java Developers
+* C# .Net Developers
+* ...
+
+*even more than "Web-Frontend-Devs"*
+</script></section><section data-markdown><script type="text/template">
+## Does it attract you?
+
+<img src="assets/convince.jpg" style="height:400px">
+</script></section></section><section  data-markdown><script type="text/template">
+## Angular 2 Trainings
+### www.letsboot.com
+
+ Andreas | Jonas
+---|---
+<img src="assets/andreas.png" style="height:200px"> | <img src="assets/jonas.png" style="height:200px">
+... | <img src="assets/twitter.svg" style="width:40px;float:left;margin-top:-1px;border:none;box-shadow:none;">@wingsuitist
+
+### Thank you!
+</script></section></div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'plugin/math/math.js', async: true }
+            ];
+
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default',
+              dependencies: deps
+            };
+
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+
+            var options = {};
+            options = extend(defaultOptions, options, queryOptions);
+            Reveal.initialize(options);
+        </script>
+        
+          <script src="/scripts/angular2-java-basel"></script>
+    </body>
+</html>
+
